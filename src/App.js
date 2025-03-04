@@ -36,9 +36,10 @@ function App() {
     
 
       {/* Rows that fetch data on their own (TrendingRow, TopRatedRow, ActionMoviesRow) */}
-      <TrendingRow />
-      <TopRatedRow />
-      <ActionMoviesRow />
+      <TrendingRow onSelectMovie={handleSelectMovie} />
+      <TopRatedRow onSelectMovie={handleSelectMovie} />
+      <ActionMoviesRow onSelectMovie={handleSelectMovie} />
+
 
       
 
