@@ -41,10 +41,7 @@ function App() {
       <TopRatedRow />
       <ActionMoviesRow />
 
-      {/* Rows that rely on dummy or external data could use onSelectMovie */}
-      <Row title="Trending Now" onSelectMovie={handleSelectMovie} />
-      <Row title="Top Rated" onSelectMovie={handleSelectMovie} />
-      <Row title="Action Thrillers" onSelectMovie={handleSelectMovie} />
+      
 
       {/* Conditionally render details if a movie is selected */}
       {selectedMovie && (
