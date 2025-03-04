@@ -62,12 +62,12 @@ function Header() {
       </div>
 
       <div className="header__right">
-        <a href="#search" className="icon">
+        {/* <a href="#search" className="icon">
           🔍
         </a>
         <a href="#profile" className="icon">
           👤
-        </a>
+        </a> */}
       </div>
     </header>
   );
