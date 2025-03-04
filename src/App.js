@@ -8,7 +8,6 @@ import TrendingRow from './components/TrendingRow';
 import MovieDetails from './components/MovieDetails';
 import TopRatedRow from './components/TopRatedRow';
 import ActionMoviesRow from './components/ActionMoviesRow';
-import Row from './components/Row';
 
 function App() {
   const featuredMovie = {
