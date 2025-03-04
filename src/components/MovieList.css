@@ -1,0 +1,38 @@
+/* src/components/MovieList.css */
+.movie-list {
+    padding: 20px;
+  }
+  
+  .movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-poster {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .movie-title {
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  

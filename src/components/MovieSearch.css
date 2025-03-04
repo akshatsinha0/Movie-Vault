@@ -1,0 +1,43 @@
+/* src/components/MovieSearch.css */
+.movie-search {
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .movie-search form {
+    margin-bottom: 1rem;
+  }
+  
+  .movie-search input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+    max-width: 400px;
+  }
+  
+  .movie-search button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .movie-item {
+    width: 150px;
+    text-align: center;
+  }
+  
+  .movie-item img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  

@@ -1,0 +1,126 @@
+/* src/components/Row.css */
+.row {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    color: #fff;
+  }
+  
+  .row__title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .row__posters {
+    display: flex;
+    overflow-x: auto;      /* Horizontal scroll */
+    padding-bottom: 0.5rem;
+  }
+  
+  .row__posterContainer {
+    position: relative;
+    flex: 0 0 auto;        /* No shrinking, no growing */
+    margin-right: 0.5rem;
+    transition: transform 0.3s;
+  }
+  
+  .row__poster {
+    max-width: 200px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  .row__posterContainer:hover {
+    transform: scale(1.1);
+    z-index: 2;
+  }
+  
+  .row__posterOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: #fff;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .row__posterContainer:hover .row__posterOverlay {
+    opacity: 1;
+  }
+  
+  /* src/components/Row.css */
+.row {
+    margin: 1.5rem 2rem;
+  }
+  
+  .row__title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff; /* or your chosen color */
+  }
+  
+  /* The scroll container */
+  .row__posters {
+    display: flex;
+    overflow-x: auto; /* horizontal scroll */
+    padding-bottom: 0.5rem;
+    gap: 1rem; /* space between posters */
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+  }
+  
+  /* Hide scrollbar in Chrome/Safari/Edge (optional) */
+  .row__posters::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .row__posterContainer {
+    position: relative;
+    flex: 0 0 auto; /* do not shrink or grow */
+    width: 150px; /* poster width */
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+  
+  .row__poster {
+    width: 100%;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  
+  /* Hover effect to scale the poster and show overlay */
+  .row__posterContainer:hover {
+    transform: scale(1.08);
+    z-index: 2; /* so it appears above neighbors */
+  }
+  
+  .row__posterOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: #fff;
+    padding: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .row__posterContainer:hover .row__posterOverlay {
+    opacity: 1;
+  }
+  
+  .row__overlayTitle {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
+  
+  .row__overlayRating {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
