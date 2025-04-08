@@ -1,72 +1,59 @@
-
+/* Modal Overlay */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 999; 
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 999;
+}
 
-  .modal-content {
-    position: relative;
-    width: 400px;
-    max-width: 90%;
-    margin: 100px auto;
-    padding: 2rem;
-    border-radius: 8px;
-    background-color: #fff; 
-  }
-  
+/* Modal Content */
+.modal-content {
+  position: relative;
+  width: 450px;
+  max-width: calc(100% - 40px);
+  margin: auto;
+  margin-top: calc(50vh - 200px);
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #fff;
+}
 
-  .purple-box {
-    background-color: #6a0dad; 
-    color: #fff;
-  }
-  
+/* Animated Modal */
+.animated-modal {
+  animation: fadeInScaleUp .5s ease-in-out forwards;
+}
 
-  .signup-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+@keyframes fadeInScaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
   }
   
-  .signup-form label {
-    font-weight: 600;
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  .signup-form input {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  /* Buttons */
-  .signup-form button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #f0f0f0;
-    color: #333;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .signup-form button:hover {
-    background-color: #ccc;
-  }
-  
+}
 
-  .close-btn {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    background: transparent;
-    color: #fff;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff5c5c;
+  color: #fff;
+  border-radius:50%;
+ border:none; 
+}
+
+/* Step Heading */
+.step h2 {
+ font-family:'Poppins';
+ font-weight:bold;}
+
+/* Buttons */
+.submit-btn{
+background:#FFD700;}

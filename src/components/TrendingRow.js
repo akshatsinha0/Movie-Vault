@@ -7,7 +7,7 @@ function TrendingRow() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  useEffect(() => { 
     async function getData() {
       try {
         const trending = await fetchTrendingMovies();
