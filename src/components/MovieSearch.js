@@ -1,5 +1,5 @@
 // src/components/MovieSearch.js
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback} from 'react';
 import { fetchMovies } from '../api/tmdb';
 import './MovieSearch.css';
 import SearchIcon from '@mui/icons-material/Search';
@@ -15,18 +15,7 @@ const MovieSearch = () => {
 
   const fallbackPoster = 'https://via.placeholder.com/300x450?text=No+Image';
 
-  // Debounce search input
-  useEffect(() => {
-    const handler = setTimeout(() => {
-      if (query.trim()) {
-        performSearch();
-      }
-    }, 500);
-
-    return () => clearTimeout(handler);
-  }, [query]);
-
-  const performSearch = async () => {
+  const performSearch = useCallback(async () => {
     setLoading(true);
     setError(null);
     try {
@@ -37,7 +26,19 @@ const MovieSearch = () => {
     } finally {
       setLoading(false);
     }
-  };
+  }, [query]);
+
+  
+  // Debounce search input
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      if (query.trim()) {
+        performSearch();
+      }
+    }, 500);
+
+    return () => clearTimeout(handler);
+  }, [query, performSearch]);
 
   const handleClear = () => {
     setQuery('');
