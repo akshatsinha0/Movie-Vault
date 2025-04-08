@@ -840,3 +840,4 @@ input[type="checkbox"]:checked + .checkmark::after {
     width: 150px;
   }
 }
+

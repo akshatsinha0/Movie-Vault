@@ -8,6 +8,7 @@ import TrendingRow from './components/TrendingRow';
 import MovieDetails from './components/MovieDetails';
 import TopRatedRow from './components/TopRatedRow';
 import ActionMoviesRow from './components/ActionMoviesRow';
+import Footer from './components/Footer'; 
 
 function App() {
   const featuredMovie = {
@@ -50,6 +51,7 @@ function App() {
           onClose={() => setSelectedMovie(null)}
         />
       )}
+      <Footer />
     </div>
   );
 }
