@@ -502,16 +502,17 @@
   
   .newsletter-form .form-group {
     position: relative;
+    width: 100%;
   }
   
   .newsletter-form input {
+    box-sizing: border-box;
     width: 100%;
-    padding: 0.8rem 1rem;
+    padding: 10px 50px 10px 15px; /* Right padding for button */
+    border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
-    font-size: 0.95rem;
     transition: all 0.3s ease;
   }
   
@@ -647,6 +648,75 @@
     cursor: pointer;
     font-size: 0.9rem;
   }
+
+.language-selector select option {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 8px;
+  }
+  
+ 
+  .language-selector select option[value="hi"] {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+ 
+  .language-selector select {
+    background-color: #1a1a1a; 
+    color: white; 
+    padding: 8px 12px;
+  }
+  /* Enhanced dropdown styling */
+.language-selector select {
+    background: linear-gradient(135deg, #2a0845, #4a0072);
+    color: white;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  /* Colorful option styling */
+  .language-selector select option {
+    padding: 12px;
+    font-weight: 500;
+  }
+  
+  /* Different colors for different languages */
+  .language-selector select option[value="en"] {
+    background-color: #1f1f3a;
+    color: #fff;
+  }
+  
+  .language-selector select option[value="hi"] {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  .language-selector select option[value="ta"] {
+    background-color: #047857;
+    color: white;
+  }
+  
+  .language-selector select option[value="te"] {
+    background-color: #9333ea;
+    color: white;
+  }
+  
+  .language-selector select option[value="ml"] {
+    background-color: #b91c1c;
+    color: white;
+  }
+  
+  .language-selector select option[value="bn"] {
+    background-color: #0369a1;
+    color: white;
+  }
+  
   
   .language-selector select:focus {
     outline: none;
